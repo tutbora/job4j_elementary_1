@@ -27,11 +27,13 @@ public class CounterTest {
         int expected = 330;
         assertThat(rsl, is(expected));
     }
-
+/*
+    // с учетом отрицательных чисел,
     @Test
     public void whenSumEvenNumbersFromNegativeTenToPositiveTenThenSixty() {
         int rsl = Counter.sumByEven(-10, 10);
         int expected = 60;
         assertThat(rsl, is(expected));
     }
+*/
 }
