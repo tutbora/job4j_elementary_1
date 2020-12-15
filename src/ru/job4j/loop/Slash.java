@@ -1,17 +1,17 @@
 package ru.job4j.loop;
 
 public class Slash {
-   /* public static void draw(int size) {
+    public static void draw(int size) {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                boolean left = (row + cell) % 2 == 0;
-                *//* добавить условие, по
+                boolean left = row == cell;
+                 /*добавить условие, по
                  которому нужно определить
-                 ставить ли символ или нет. *//*
-                boolean right = (size - 1) == cell && (size - 1) == row;
-                *//* добавить условие,
+                 ставить ли символ или нет. */
+                boolean right = row + cell == size - 1;
+                 /*добавить условие,
                  что нужно ставить
-                 элемент в правый угол. *//*
+                 элемент в правый угол. */
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
@@ -19,6 +19,15 @@ public class Slash {
                 } else {
                     System.out.print(" ");
                 }
+
+                // оптимизированное решение ниже
+
+                /* if (row == cell || row + cell == size - 1) {
+                    System.out.print("0");
+                } else {
+                    System.out.print(" ");
+                }*/
+
             }
             System.out.println();
         }
@@ -30,5 +39,5 @@ public class Slash {
         draw(3);
         System.out.println("Draw by 5");
         draw(5);
-    }*/
+    }
 }
