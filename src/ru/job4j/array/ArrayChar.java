@@ -3,6 +3,15 @@ package ru.job4j.array;
 public class ArrayChar {
 
     public static boolean startsWith(char[] word, char[] pref) {
-        return pref[0] == word[0] && pref[1] == word[1];
+        boolean result = false;
+        for (int i = 0; i <= pref.length - 1; i++) {
+            if (word[i] == pref[i]) {
+                result = true;
+            } else {
+                result = false;
+                break;
+            }
+        }
+        return result;
     }
 }
