@@ -3,8 +3,8 @@ package ru.job4j.array;
 public class MinDiapason {
     public static int findMin(int[] array, int start, int finish) {
         int min = array[start];
-        for (int i = start; i < finish; i++) {
-            min = min > array[i + 1] ? array[i + 1] : min;
+        for (int i = start + 1; i < finish + 1; i++) {
+            min = min > array[i] ? array[i] : min;
         }
         return min;
     }
