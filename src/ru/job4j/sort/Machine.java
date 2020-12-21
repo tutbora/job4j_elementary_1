@@ -12,7 +12,7 @@ public class Machine {
             if (money >= price) {
                 money = money - price;
             }
-            if (money >= coins[size]){
+            if (money >= coins[size]) {
                 rsl[i] = coins[size];
                 money = money - coins[size];
                 size++;
