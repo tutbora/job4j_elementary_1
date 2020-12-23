@@ -1,18 +1,4 @@
 package ru.job4j.temp;
-/*
-объявили А, B, C;
-
-        if (А > B)
-        if (A > C) напечатать A;
-
-        if (B > A)
-        if (B > C) напечатать B;
-
-        if (C > A)
-        if (C > B) напечатать C;
-
-        закончить программу;
-*/
 
 public class ExampleTemp001 {
 

@@ -6,8 +6,6 @@ public class Triangle {
         return ab + ac > bc && ac + bc > ab && ab + bc > ac;
     }
 
-// здесть чисто для самопроверки
-
     public static void main(String[] args) {
         double ab = 5;
         double ac = 4;

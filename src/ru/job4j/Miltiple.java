@@ -11,7 +11,6 @@ public class Miltiple {
         System.out.println("1 * 7 = 7");
         System.out.println("1 * 8 = 8");
         System.out.println("1 * 9 = 9");
-
 //        System.out.println();
 //        for (int i = 1; i < 10; i++) {
 //            System.out.println("System.out.println(\"1" + " * " + i + " = " + i + "\");");
