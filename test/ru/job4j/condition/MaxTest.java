@@ -26,25 +26,25 @@ public class MaxTest {
 
     @Test
     public void whenMax8To2To6ThenOther() {
-        int result = Max.max(8,2, 6);
+        int result = Max.max(8, 2, 6);
         assertThat(result, is(8));
     }
 
     @Test
     public void whenMax9To6To4ThenOther() {
-        int result = Max.max(6,9, 4);
+        int result = Max.max(6, 9, 4);
         assertThat(result, is(9));
     }
 
     @Test
     public void whenMax9To4To6ThenOther() {
-        int result = Max.max(6,4, 9);
+        int result = Max.max(6, 4, 9);
         assertThat(result, is(9));
     }
 
     @Test
     public void whenMax9To4To6To3() {
-        int result = Max.max(6,4, 9, 3);
+        int result = Max.max(6, 4, 9, 3);
         assertThat(result, is(9));
     }
 }
