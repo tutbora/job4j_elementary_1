@@ -9,8 +9,7 @@ public class Max {
     }
 
     public static int max(int first, int second, int third) {
-        second = Math.max(second, third);
-        return Math.max(first, second);
+        return max(max(first, second), third);
     }
 
     public static int max(int first, int second, int third, int fourth) {
